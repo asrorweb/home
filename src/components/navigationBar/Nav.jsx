@@ -25,31 +25,31 @@ function Nav() {
                     </Link>
                     <ul className="flex gap-3 text-xl text-gray-500 max-md:hidden">
                         <NavLink
-                            to={"/"}
+                            to={"/imba/"}
                             className="hover:text-purple-800 p-2 text-base"
                         >
                             Home
                         </NavLink>
                         <NavLink
-                            to={"/gallary"}
+                            to={"/imba/gallary"}
                             className="hover:text-purple-800 p-2 text-base"
                         >
                             Video Gallary
                         </NavLink>
                         <NavLink
-                            to={"/design"}
+                            to={"/imba/design"}
                             className="hover:text-purple-800 p-2 text-base"
                         >
                             3D Design
                         </NavLink>
                         <NavLink
-                            to={"/about"}
+                            to={"/imba/about"}
                             className="hover:text-purple-800 p-2 text-base"
                         >
                             About
                         </NavLink>
                         <NavLink
-                            to={"/price"}
+                            to={"/imba/price"}
                             className="hover:text-purple-800 p-2 text-base"
                         >
                             Prices
@@ -85,7 +85,10 @@ function Nav() {
                         >
                             {/* mobile menu box top */}
                             <div className="top_nav flex items-center justify-between mb-[10px]">
-                                <Link to={"/"} className="text-4xl text-white">
+                                <Link
+                                    to={"/imba/"}
+                                    className="text-4xl text-white"
+                                >
                                     <img
                                         src={SiteLogoMobile}
                                         className="w-36 h-14"
@@ -110,31 +113,31 @@ function Nav() {
                             {/* mobile menu box bottom */}
                             <ul className="flex flex-col text-xl text-white">
                                 <NavLink
-                                    to={"/"}
+                                    to={"/imba/"}
                                     className="hover:text-purple-800  p-2 text-[19px] leading-[28.8px]"
                                 >
                                     Home
                                 </NavLink>
                                 <NavLink
-                                    to={"/gallary"}
+                                    to={"/imba/gallary"}
                                     className="hover:text-purple-800 p-2 text-[19px]"
                                 >
                                     Video Gallary
                                 </NavLink>
                                 <NavLink
-                                    to={"/design"}
+                                    to={"/imba/design"}
                                     className="hover:text-purple-800 p-2 text-[19px]"
                                 >
                                     3D Design
                                 </NavLink>
                                 <NavLink
-                                    to={"/about"}
+                                    to={"/imba/about"}
                                     className="hover:text-purple-800 p-2 text-[19px]"
                                 >
                                     About
                                 </NavLink>
                                 <NavLink
-                                    to={"/price"}
+                                    to={"/imba/price"}
                                     className="hover:text-purple-800 p-2 text-[19px]"
                                 >
                                     Prices
