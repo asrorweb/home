@@ -20,7 +20,7 @@ function Nav() {
         <header className="header flex z-[900] items-center bg-white fixed top-0 left-0 right-0">
             <nav className="w-full">
                 <div className="container mx-auto xl:px-10 max-xl:px-0 max-md:px-4 flex justify-between items-center">
-                    <Link to={"/"} className="text-4xl text-white">
+                    <Link to={"/imba/"} className="text-4xl text-white">
                         <img src={SiteLogo} alt="" className="w-36 h-14" />
                     </Link>
                     <ul className="flex gap-3 text-xl text-gray-500 max-md:hidden">
