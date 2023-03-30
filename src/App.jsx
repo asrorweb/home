@@ -23,10 +23,10 @@ function App() {
                 <Nav />
                 <Routes>
                     <Route path="/imba/" element={<Home />} />
-                    <Route path="/imba/about" element={<About />} />
-                    <Route path="/imba/gallary" element={<Gallary />} />
-                    <Route path="/imba/design" element={<Design />} />
-                    <Route path="/imba/price" element={<Price />} />
+                    <Route path="/imba%about" element={<About />} />
+                    <Route path="/imba%gallary" element={<Gallary />} />
+                    <Route path="/imba%design" element={<Design />} />
+                    <Route path="/imba%price" element={<Price />} />
                     <Route path="*" />
                 </Routes>
             </BrowserRouter>
