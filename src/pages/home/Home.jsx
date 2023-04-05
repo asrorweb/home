@@ -2,6 +2,9 @@ import React from "react";
 
 import VidioSection from "../gallary/VidioSection";
 
+// img
+import insaImg1 from "../../img/instapost.jpg";
+
 export default function Home() {
     return (
         <>
@@ -111,28 +114,28 @@ export default function Home() {
                     <ul className="flex justify-center gap-5 flex-wrap mt-6">
                         <li className="w-[300px] duration-200 hover:scale-[1.1]">
                             <img
-                                src="./src/img/instapost.jpg"
+                                src={insaImg1}
                                 alt="img"
                                 className="w-full rounded-[24px]"
                             />
                         </li>
                         <li className="w-[300px] duration-200 hover:scale-[1.1]">
                             <img
-                                src="./src/img/instapost.jpg"
+                                src={insaImg1}
                                 alt="img"
                                 className="w-full rounded-[24px]"
                             />
                         </li>
                         <li className="w-[300px] duration-200 hover:scale-[1.1]">
                             <img
-                                src="./src/img/instapost.jpg"
+                                src={insaImg1}
                                 alt="img"
                                 className="w-full rounded-[24px]"
                             />
                         </li>
                         <li className="w-[300px] duration-200 hover:scale-[1.1]">
                             <img
-                                src="./src/img/instapost.jpg"
+                                src={insaImg1}
                                 alt="img"
                                 className="w-full rounded-[24px]"
                             />
