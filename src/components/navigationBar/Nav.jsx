@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 // img
-import SiteLogo from "../../img/logo.svg";
-import SiteLogoMobile from "../../img/logo-mobile.svg";
+import SiteLogo from "../../img/logo.jpg";
+import SiteLogoMobile from "../../img/logo.jpg";
 
 // btn img
 import MenuOpen from "../../img/open.png";
@@ -17,40 +17,42 @@ function Nav() {
     // }
 
     return (
-        <header className="header flex z-[900] items-center bg-white fixed top-0 left-0 right-0">
+        <header className="header flex z-[900] items-center bg-white dark:bg-[#171923] fixed top-0 left-0 right-0">
             <nav className="w-full">
                 <div className="container mx-auto xl:px-10 max-xl:px-0 max-md:px-4 flex justify-between items-center">
-                    <Link to={"/imba/"} className="text-4xl text-white">
-                        <img src={SiteLogo} alt="" className="w-36 h-14" />
+                    <Link to={"/"} className="text-4xl text-white">
+                        <span className="text-[#ffd700] text-5xl font-semibold">
+                            Gold
+                        </span>
                     </Link>
                     <ul className="flex gap-3 text-xl text-gray-500 max-md:hidden">
                         <NavLink
-                            to={"/imba/"}
-                            className="hover:text-purple-800 p-2 text-base"
+                            to={"/"}
+                            className="hover:text-[#ffd700] p-2 text-base"
                         >
                             Home
                         </NavLink>
                         <NavLink
-                            to={"/imba/gallary"}
-                            className="hover:text-purple-800 p-2 text-base"
+                            to={"/gallary"}
+                            className="hover:text-[#ffd700] p-2 text-base"
                         >
                             Video Gallary
                         </NavLink>
                         <NavLink
-                            to={"/imba/design"}
-                            className="hover:text-purple-800 p-2 text-base"
+                            to={"/design"}
+                            className="hover:text-[#ffd700] p-2 text-base"
                         >
                             3D Design
                         </NavLink>
                         <NavLink
-                            to={"/imba/about"}
-                            className="hover:text-purple-800 p-2 text-base"
+                            to={"/about"}
+                            className="hover:text-[#ffd700] p-2 text-base"
                         >
                             About
                         </NavLink>
                         <NavLink
-                            to={"/imba/price"}
-                            className="hover:text-purple-800 p-2 text-base"
+                            to={"/price"}
+                            className="hover:text-[#ffd700] p-2 text-base"
                         >
                             Prices
                         </NavLink>
@@ -85,14 +87,10 @@ function Nav() {
                         >
                             {/* mobile menu box top */}
                             <div className="top_nav flex items-center justify-between mb-[10px]">
-                                <Link
-                                    to={"/imba/"}
-                                    className="text-4xl text-white"
-                                >
-                                    <img
-                                        src={SiteLogoMobile}
-                                        className="w-36 h-14"
-                                    />
+                                <Link to={"/"} className="text-4xl text-white">
+                                    <span className="text-[#ffd700] text-5xl font-semibold">
+                                        Gold
+                                    </span>
                                 </Link>
 
                                 {/* mobile menu close*/}
@@ -113,31 +111,31 @@ function Nav() {
                             {/* mobile menu box bottom */}
                             <ul className="flex flex-col text-xl text-white">
                                 <NavLink
-                                    to={"/imba/"}
+                                    to={"/"}
                                     className="hover:text-purple-800  p-2 text-[19px] leading-[28.8px]"
                                 >
                                     Home
                                 </NavLink>
                                 <NavLink
-                                    to={"/imba/gallary"}
+                                    to={"/gallary"}
                                     className="hover:text-purple-800 p-2 text-[19px]"
                                 >
                                     Video Gallary
                                 </NavLink>
                                 <NavLink
-                                    to={"/imba/design"}
+                                    to={"/design"}
                                     className="hover:text-purple-800 p-2 text-[19px]"
                                 >
                                     3D Design
                                 </NavLink>
                                 <NavLink
-                                    to={"/imba/about"}
+                                    to={"/about"}
                                     className="hover:text-purple-800 p-2 text-[19px]"
                                 >
                                     About
                                 </NavLink>
                                 <NavLink
-                                    to={"/imba/price"}
+                                    to={"/price"}
                                     className="hover:text-purple-800 p-2 text-[19px]"
                                 >
                                     Prices
