@@ -2,12 +2,20 @@
 module.exports = {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     presets: [],
-    darkMode: "media", // or 'class'
+    darkMode: "class", // or 'class'
     theme: {
         accentColor: ({ theme }) => ({
             ...theme("colors"),
             auto: "auto",
         }),
+        extend: {
+            keyframes: {
+                wiggle: {
+                    "0%, 100%": { height: "206px", width: "113%" },
+                    "50%": { height: "142px", width: "126%" },
+                },
+            },
+        },
         animation: {
             none: "none",
             spin: "spin 1s linear infinite",

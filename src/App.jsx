@@ -17,9 +17,8 @@ import Price from "./pages/price/Price";
 
 function App() {
     return (
-        <div>
+        <div className="dark:bg-[#1A202C] duration-500">
             <BrowserRouter>
-                <div className="fixed -z-50  left-0 right-0 top-0 bottom-0 bg-img"></div>
                 <Nav />
                 <Routes>
                     <Route path="/" element={<Home />} />

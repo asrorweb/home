@@ -1,5 +1,5 @@
 import React from "react";
-import VidioSection from "./VidioSection";
+// import VidioSection from "./VidioSection";
 function contact(props) {
     return (
         <div className="hero">
