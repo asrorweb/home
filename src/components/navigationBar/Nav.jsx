@@ -7,10 +7,6 @@ import { v4 as uuidv4 } from "uuid";
 // my component
 import Buttons from "../buttons/Buttons";
 
-// img
-import SiteLogo from "../../img/logo.jpg";
-import SiteLogoMobile from "../../img/logo.jpg";
-
 // react icons
 import { CiDark } from "react-icons/ci";
 import { BiSun } from "react-icons/bi";
@@ -18,7 +14,6 @@ import { AiOutlineMenu, AiOutlineClose, AiOutlineRight } from "react-icons/ai";
 
 // data
 import { navList } from "../../../data/db";
-console.log(navList);
 
 function Nav() {
     const [mobileBtnClick, setMobileBtnClick] = useState(false);
@@ -91,7 +86,7 @@ function Nav() {
                         </div>
 
                         {/* sign in sign out */}
-                        <Buttons text={"Kirish"} direction={"/"} />
+                        <Buttons text={"Kirish"} direction={"/login"} />
                     </div>
 
                     {/*  mobile menu navigation box*/}
@@ -104,7 +99,7 @@ function Nav() {
                     >
                         <div>
                             {/* mobile menu box bottom */}
-                            <ul className="flex flex-col   text-black  dark:text-white ">
+                            <ul className="flex flex-col text-black  dark:text-white ">
                                 {navList.map((data, index) => {
                                     return (
                                         <li key={uuidv4()}>

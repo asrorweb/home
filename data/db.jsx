@@ -22,3 +22,10 @@ export const navList = [
         itmes: ["O'quv jadvali", "Nazorat jadvali", "Davomat", "Ozlashtrish"],
     },
 ];
+
+export const users = [
+    {
+        email: "",
+        password: "",
+    },
+];

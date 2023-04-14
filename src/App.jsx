@@ -14,8 +14,14 @@ import Gallary from "./pages/gallary/Gallary";
 import About from "./pages/about/About";
 import Design from "./pages/design/Design";
 import Price from "./pages/price/Price";
+import Register from "./components/access/Register";
+import Login from "./components/access/Login";
 
 function App() {
+    const [email, setEmail] = useState(null);
+    const [password, setPassword] = useState(null);
+
+    console.log({ email, password });
     return (
         <div className="dark:bg-[#1A202C] duration-500">
             <BrowserRouter>
@@ -26,6 +32,8 @@ function App() {
                     <Route path="/gallary" element={<Gallary />} />
                     <Route path="/design" element={<Design />} />
                     <Route path="/price" element={<Price />} />
+                    <Route path="/register" element={<Register />} />
+                    <Route path="/login" element={<Login />} />
                     <Route path="*" />
                 </Routes>
             </BrowserRouter>
