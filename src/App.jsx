@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // components
 // navigation
@@ -22,6 +22,15 @@ function App() {
     const [password, setPassword] = useState(null);
     const [test, setTest] = useState(false);
     console.log(email);
+    // if (window.location.reload()) {
+    //     setTest(true);
+    // }
+    useEffect(() => {
+        if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+            setTest(true);
+        }
+    }, []);
+
     return (
         <div className="dark:bg-[#1A202C] duration-500">
             <BrowserRouter>

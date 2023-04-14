@@ -99,6 +99,16 @@ function Nav({ test, email }) {
                         )}
                     </div>
 
+                    <div
+                        onClick={() => {
+                            setMobileBtnClick(false);
+                        }}
+                        className={
+                            mobileBtnClick
+                                ? "absolute z-[900] top-[100px] max-md:top-[80px] left-0 right-0 bottom-0 w-full    h-screen bg-[#3333339c] text-white block duration-[100ms]"
+                                : "absolute z-[900] top-[100px] max-md:top-[80px] left-0  h-screen bg-[#3333337a] text-white hidden duration-[100ms]"
+                        }
+                    ></div>
                     {/*  mobile menu navigation box*/}
                     <div
                         className={
@@ -140,6 +150,11 @@ function Nav({ test, email }) {
                                                 {data.itmes.map((itme) => {
                                                     return (
                                                         <Link
+                                                            onClick={() => {
+                                                                setMobileBtnClick(
+                                                                    !mobileBtnClick
+                                                                );
+                                                            }}
                                                             to={
                                                                 test
                                                                     ? itme.to
