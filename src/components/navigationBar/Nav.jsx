@@ -11,11 +11,12 @@ import Buttons from "../buttons/Buttons";
 import { CiDark } from "react-icons/ci";
 import { BiSun } from "react-icons/bi";
 import { AiOutlineMenu, AiOutlineClose, AiOutlineRight } from "react-icons/ai";
+import { FaUserCircle } from "react-icons/fa";
 
 // data
 import { navList } from "../../../data/db";
 
-function Nav() {
+function Nav({ test, email }) {
     const [mobileBtnClick, setMobileBtnClick] = useState(false);
     const [dark, setDark] = useState(false);
     const [selectedNav, setSelectedNav] = useState(null);
@@ -58,7 +59,10 @@ function Nav() {
                         >
                             <AiOutlineMenu />
                         </button>
-                        <Link to={"/"} className="text-4xl text-white">
+                        <Link
+                            to={test ? "/user" : "/"}
+                            className="text-4xl text-white"
+                        >
                             <span className="text-[#ffd700] text-5xl font-semibold max-sm:text-4xl">
                                 Gold
                             </span>
@@ -86,7 +90,13 @@ function Nav() {
                         </div>
 
                         {/* sign in sign out */}
-                        <Buttons text={"Kirish"} direction={"/login"} />
+                        {!test ? (
+                            <Buttons text={"Kirish"} direction={"/login"} />
+                        ) : (
+                            <Link to={"/usersetings"}>
+                                <FaUserCircle className="text-[30px] dark:text-white cursor-pointer" />
+                            </Link>
+                        )}
                     </div>
 
                     {/*  mobile menu navigation box*/}
@@ -130,10 +140,15 @@ function Nav() {
                                                 {data.itmes.map((itme) => {
                                                     return (
                                                         <Link
+                                                            to={
+                                                                test
+                                                                    ? itme.to
+                                                                    : "/register"
+                                                            }
                                                             key={uuidv4()}
                                                             className="cursor-pointer hover:opacity-80 text-[#8aa4af]"
                                                         >
-                                                            {itme}
+                                                            {itme.title}
                                                         </Link>
                                                     );
                                                 })}

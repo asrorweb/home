@@ -10,30 +10,47 @@ import Nav from "./components/navigationBar/Nav";
 
 // pages
 import Home from "./pages/home/Home";
-import Gallary from "./pages/gallary/Gallary";
-import About from "./pages/about/About";
-import Design from "./pages/design/Design";
-import Price from "./pages/price/Price";
+import User from "./pages/user/User";
+import UserSet from "./pages/user/UserSet";
+import Talabaruyhati from "./pages/user/talabaruyhati/Talabaruyhati";
+
 import Register from "./components/access/Register";
 import Login from "./components/access/Login";
 
 function App() {
-    const [email, setEmail] = useState(null);
+    const [email, setEmail] = useState("");
     const [password, setPassword] = useState(null);
-
-    console.log({ email, password });
+    const [test, setTest] = useState(false);
+    console.log(email);
     return (
         <div className="dark:bg-[#1A202C] duration-500">
             <BrowserRouter>
-                <Nav />
+                <Nav test={test} email={email} />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/gallary" element={<Gallary />} />
-                    <Route path="/design" element={<Design />} />
-                    <Route path="/price" element={<Price />} />
-                    <Route path="/register" element={<Register />} />
-                    <Route path="/login" element={<Login />} />
+                    <Route
+                        path="/register"
+                        element={
+                            <Register
+                                setEmail={setEmail}
+                                email={email}
+                                setTest={setTest}
+                            />
+                        }
+                    />
+                    <Route
+                        path="/login"
+                        element={
+                            <Login
+                                setEmail={setEmail}
+                                setTest={setTest}
+                                email={email}
+                            />
+                        }
+                    />
+                    <Route path="/user" element={<User />} />
+                    <Route path="/usersetings" element={<UserSet />} />
+                    <Route path="/talabaruyhati" element={<Talabaruyhati />} />
                     <Route path="*" />
                 </Routes>
             </BrowserRouter>
