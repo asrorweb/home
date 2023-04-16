@@ -13,6 +13,7 @@ import Home from "./pages/home/Home";
 import User from "./pages/user/User";
 import UserSet from "./pages/user/UserSet";
 import Talabaruyhati from "./pages/user/talabaruyhati/Talabaruyhati";
+import { CourseInfo } from "./components/course-info/CourseInfo";
 
 import Register from "./components/access/Register";
 import Login from "./components/access/Login";
@@ -51,6 +52,8 @@ function App() {
                     <Route path="/user" element={<User />} />
                     <Route path="/usersetings" element={<UserSet />} />
                     <Route path="/talabaruyhati" element={<Talabaruyhati />} />
+                    <Route path="/courseInfo" element={<CourseInfo />} />
+
                     <Route path="*" />
                 </Routes>
             </BrowserRouter>

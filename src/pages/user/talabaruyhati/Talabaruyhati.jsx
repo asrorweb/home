@@ -2,10 +2,10 @@ import React from "react";
 
 function Talabaruyhati() {
     return (
-        <div className="min-h-screen mt-[100px] max-md:mt-[80px]">
-            <div className="container py-9 mx-auto ">
+        <div className="min-h-screen mt-[100px] max-md:mt-[80px] bg-white dark:bg-gray-900">
+            <div className="container py-9 mx-auto xl:px-10 max-xl:px-0 max-md:px-4 ">
                 <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                    <div className="flex p-2 items-center justify-between pb-4 bg-white dark:bg-gray-900">
+                    <div className="flex p-2 items-center justify-between pb-4 ">
                         <div>
                             <button
                                 id="dropdownActionButton"
