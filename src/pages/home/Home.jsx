@@ -43,11 +43,17 @@ export default function Home() {
                 {/* hero bg end */}
 
                 <div className="container  mx-auto xl:px-20 max-xl:px-0 h-full px-20 flex items-center justify-between max-md:flex-col max-md:justify-start  max-md:px-4 text-white">
-                    <h1 className="text-[75px] leading-[85px] font-medium text-black max-lg:text-[45px] max-lg:leading-[65px] max-sm:text-[40px]  max-md:text-center max-md:mb-7 dark:text-white">
-                        DASTURLASHNI <br /> QULAY{" "}
-                        <span className="text-[#ffd700]">MUHITDA</span> <br />{" "}
-                        O‘RGANING
-                    </h1>
+                    <div className="-mt-8 max-md:-m-0 max-md:text-center">
+                        <h1 className="text-[75px] mb-6 leading-[85px] font-medium   text-black max-lg:text-[45px] max-lg:leading-[65px] max-sm:text-[36px] max-sm:mb-2 max-md:text-center max-md:mb-7 dark:text-white">
+                            DASTURLASHNI <br /> QULAY{" "}
+                            <span className="text-[#ffd700]">MUHITDA</span>{" "}
+                            <br /> O‘RGANING
+                        </h1>
+                        <p className="text-black dark:text-white max-md:mb-3 text-lg max-w-[500px]">
+                            Ta'lim bizga diplomli ishsizlarni emas Kelajak
+                            leaderlari va milliaderlarini kamol toptirishi kerak
+                        </p>
+                    </div>
 
                     {/* img */}
                     <div>
