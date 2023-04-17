@@ -232,7 +232,7 @@ export default function Home() {
                         <li className="px-[32px] py-5 shadow text-black dark:text-white dark:bg-[#2D3748]">
                             <BsFillCreditCard2FrontFill className="text-[35px] mb-2" />
                             <h3 className="text-[24px] leading-[36px] font-bold mb-3">
-                                Mutaxasislik 1
+                                Energetika
                             </h3>
                             <p className="text-[16px] leading-[24px]">
                                 Web Dastur, Murakkab SPA Loyiha, Foydalanuvchi
@@ -242,7 +242,7 @@ export default function Home() {
                         <li className="px-[32px] py-5 shadow text-black dark:text-white dark:bg-[#2D3748]">
                             <BsFillCreditCard2FrontFill className="text-[35px] mb-2" />
                             <h3 className="text-[24px] leading-[36px] font-bold mb-3">
-                                Mutaxasislik 1
+                                San'at
                             </h3>
                             <p className="text-[16px] leading-[24px]">
                                 Ma'lumotlar bazasi, Struktura, Microservice,
@@ -252,7 +252,7 @@ export default function Home() {
                         <li className="px-[32px] py-5 shadow text-black dark:text-white dark:bg-[#2D3748]">
                             <BsFillCreditCard2FrontFill className="text-[35px] mb-2" />
                             <h3 className="text-[24px] leading-[36px] font-bold mb-3">
-                                Mutaxasislik 1
+                                Qurulush
                             </h3>
                             <p className="text-[16px] leading-[24px]">
                                 IOS, Android, Dasturlar, Platforma, O'yin
@@ -262,7 +262,7 @@ export default function Home() {
                         <li className="px-[32px] py-5 shadow text-black dark:text-white dark:bg-[#2D3748]">
                             <BsFillCreditCard2FrontFill className="text-[35px] mb-2" />
                             <h3 className="text-[24px] leading-[36px] font-bold mb-3">
-                                Mutaxasislik 1
+                                Iqtisod
                             </h3>
                             <p>
                                 Savol, Javob, className="text-[16px]
@@ -272,7 +272,7 @@ export default function Home() {
                         <li className="px-[32px] py-5 shadow text-black dark:text-white dark:bg-[#2D3748]">
                             <BsFillCreditCard2FrontFill className="text-[35px] mb-2" />
                             <h3 className="text-[24px] leading-[36px] font-bold mb-3">
-                                Mutaxasislik 1
+                                Ijtimoi soha
                             </h3>
                             <p>
                                 Model, TensorflowJS, className="text-[16px]
@@ -282,7 +282,7 @@ export default function Home() {
                         <li className="px-[32px] py-5 shadow text-black dark:text-white dark:bg-[#2D3748]">
                             <BsFillCreditCard2FrontFill className="text-[35px] mb-2" />
                             <h3 className="text-[24px] leading-[36px] font-bold mb-3">
-                                Mutaxasislik 1
+                                Ta'lim
                             </h3>
                             <p className="text-[16px] leading-[24px]">
                                 StartUP loyiha, Interview, Hard Skill, Soft
