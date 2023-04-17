@@ -45,9 +45,12 @@ export default function Home() {
                 <div className="container  mx-auto xl:px-20 max-xl:px-0 h-full px-20 flex items-center justify-between max-md:flex-col max-md:justify-start  max-md:px-4 text-white">
                     <div className="-mt-8 max-md:-m-0 max-md:text-center">
                         <h1 className="text-[75px] mb-6 leading-[85px] font-medium   text-black max-lg:text-[45px] max-lg:leading-[65px] max-sm:text-[36px] max-sm:mb-2 max-md:text-center max-md:mb-7 dark:text-white">
-                            DASTURLASHNI <br /> QULAY{" "}
-                            <span className="text-[#ffd700]">MUHITDA</span>{" "}
-                            <br /> O‘RGANING
+                            {/* DASTURLASHNI <br /> QULAY{" "}
+                           {" "}
+                            <br /> O‘RGANING */}
+                            Mutaxasislikni <br />{" "}
+                            <span className="text-[#ffd700]">Biz bilan</span>{" "}
+                            tez va <br /> oson o'rganing
                         </h1>
                         <p className="text-black dark:text-white max-md:mb-3 text-lg max-w-[500px]">
                             Ta'lim bizga diplomli ishsizlarni emas Kelajak
@@ -151,7 +154,7 @@ export default function Home() {
 
             {/* Suggestions taklimlar */}
             <div>
-                <div className="container  mx-auto xl:px-10 max-xl:px-0 h-full px-20 max-md:px-4">
+                <div className="container mb-11  mx-auto xl:px-10 max-xl:px-0 h-full px-20 max-md:px-4">
                     <h2 className="text-[36px] leading-[43px] font-bold text-black dark:text-white mb-6">
                         Takliflar
                     </h2>
@@ -210,6 +213,76 @@ export default function Home() {
                             <BsFillCreditCard2FrontFill className="text-[35px] mb-2" />
                             <h3 className="text-[24px] leading-[36px] font-bold mb-3">
                                 Real Tajriba
+                            </h3>
+                            <p className="text-[16px] leading-[24px]">
+                                StartUP loyiha, Interview, Hard Skill, Soft
+                                Skill
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div className="pb-10">
+                <div className="container  mx-auto xl:px-10 max-xl:px-0 h-full px-20 max-md:px-4">
+                    <h2 className="text-[36px] leading-[43px] font-bold text-black dark:text-white mb-6">
+                        Mutaxasislik
+                    </h2>
+                    <ul className="grid grid-cols-3 gap-5  max-md:grid-cols-1">
+                        <li className="px-[32px] py-5 shadow text-black dark:text-white dark:bg-[#2D3748]">
+                            <BsFillCreditCard2FrontFill className="text-[35px] mb-2" />
+                            <h3 className="text-[24px] leading-[36px] font-bold mb-3">
+                                Mutaxasislik 1
+                            </h3>
+                            <p className="text-[16px] leading-[24px]">
+                                Web Dastur, Murakkab SPA Loyiha, Foydalanuvchi
+                                Interfeysi & API
+                            </p>
+                        </li>
+                        <li className="px-[32px] py-5 shadow text-black dark:text-white dark:bg-[#2D3748]">
+                            <BsFillCreditCard2FrontFill className="text-[35px] mb-2" />
+                            <h3 className="text-[24px] leading-[36px] font-bold mb-3">
+                                Mutaxasislik 1
+                            </h3>
+                            <p className="text-[16px] leading-[24px]">
+                                Ma'lumotlar bazasi, Struktura, Microservice,
+                                Test
+                            </p>
+                        </li>
+                        <li className="px-[32px] py-5 shadow text-black dark:text-white dark:bg-[#2D3748]">
+                            <BsFillCreditCard2FrontFill className="text-[35px] mb-2" />
+                            <h3 className="text-[24px] leading-[36px] font-bold mb-3">
+                                Mutaxasislik 1
+                            </h3>
+                            <p className="text-[16px] leading-[24px]">
+                                IOS, Android, Dasturlar, Platforma, O'yin
+                                loyihalar
+                            </p>
+                        </li>
+                        <li className="px-[32px] py-5 shadow text-black dark:text-white dark:bg-[#2D3748]">
+                            <BsFillCreditCard2FrontFill className="text-[35px] mb-2" />
+                            <h3 className="text-[24px] leading-[36px] font-bold mb-3">
+                                Mutaxasislik 1
+                            </h3>
+                            <p>
+                                Savol, Javob, className="text-[16px]
+                                leading-[24px]"Takliflar, Muloqot, Tanishuvlar
+                            </p>
+                        </li>
+                        <li className="px-[32px] py-5 shadow text-black dark:text-white dark:bg-[#2D3748]">
+                            <BsFillCreditCard2FrontFill className="text-[35px] mb-2" />
+                            <h3 className="text-[24px] leading-[36px] font-bold mb-3">
+                                Mutaxasislik 1
+                            </h3>
+                            <p>
+                                Model, TensorflowJS, className="text-[16px]
+                                leading-[24px]" Segmentatsiya, ChatGPT
+                            </p>
+                        </li>
+                        <li className="px-[32px] py-5 shadow text-black dark:text-white dark:bg-[#2D3748]">
+                            <BsFillCreditCard2FrontFill className="text-[35px] mb-2" />
+                            <h3 className="text-[24px] leading-[36px] font-bold mb-3">
+                                Mutaxasislik 1
                             </h3>
                             <p className="text-[16px] leading-[24px]">
                                 StartUP loyiha, Interview, Hard Skill, Soft
